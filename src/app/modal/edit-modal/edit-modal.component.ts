@@ -29,7 +29,6 @@ export class EditModalComponent implements OnInit {
   });
 
   ngOnInit(): void {
-    console.log(this.dataIn)
     if(!this.dataIn.isNew){
       this.myForm.patchValue({
         ...this.dataIn
@@ -38,7 +37,6 @@ export class EditModalComponent implements OnInit {
   }
 
   editField(){
-    //console.log(this.myForm.value)
     let response = {
       ...this.myForm.value
     }

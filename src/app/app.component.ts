@@ -28,7 +28,6 @@ export class AppComponent implements OnInit {
   }
 
   editModal(user, index){
-    console.log(user)
     let dialogRef = this.dialog.open(EditModalComponent, {
       data: {
         isNew: false,
@@ -41,11 +40,10 @@ export class AppComponent implements OnInit {
     });
     dialogRef.afterClosed().pipe().subscribe((response) => {
       if(response && response.newUser){
-        console.log(response.newUser)
         this.dataSource[index] = response.newUser
         this.table.renderRows();
+        // Api call for update
       }
-      console.log(this.dataSource)
     });
   }
 
@@ -59,16 +57,16 @@ export class AppComponent implements OnInit {
     });
     dialogRef.afterClosed().pipe().subscribe((response) => {
       if(response && response.newUser){
-        console.log(response.newUser)
         this.dataSource.push(response.newUser)
         this.table.renderRows();
+        // Api call for create
       }
-      console.log(this.dataSource)
     });
   }
 
   deleteUser(index){
     this.dataSource.splice(index, 1)
     this.table.renderRows();
+    // Api call for delete
   }
 }
