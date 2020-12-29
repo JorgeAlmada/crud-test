@@ -1,0 +1,24 @@
+<div class="container">
+
+    <form class="example-form" [formGroup]="myForm" (ngSubmit)="editField()">
+        <mat-form-field class="example-full-width">
+          <mat-label>Nombre</mat-label>
+          <input type="text" matInput placeholder="Nombre" formControlName="name">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Apellido</mat-label>
+            <input type="text" matInput placeholder="Apellido" formControlName="lName">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <mat-label>Edad</mat-label>
+            <input type="number" matInput placeholder="Edad" formControlName="age">
+          </mat-form-field>
+        <div class="buttonContainer">
+          <button class="saveButton" matRipple type="submit" >
+            <span class="buttonText">Save</span>
+            </button>
+        </div>
+      </form>
+</div>

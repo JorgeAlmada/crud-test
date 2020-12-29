@@ -1,0 +1,27 @@
+.container{
+    background-color: black;
+    width: auto;
+    height: auto;
+    padding: 15px;
+}
+
+.example-full-width{
+    width: 100%;
+}
+
+.saveButton{
+    margin-left: auto;
+    border: none;
+    color: black;
+    background-color: white;
+}
+
+.buttonContainer{
+    padding: 5px;
+    width: 100%;
+    display: flex;
+}
+
+.buttonText{
+    font-size: 25px;
+}

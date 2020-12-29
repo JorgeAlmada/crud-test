@@ -1,0 +1,39 @@
+.fullWindow{
+    height: 100%;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+  }
+
+.center{
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    display: flex;
+}
+
+.newButton{
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: none;
+    outline: none;
+    margin-right: 5px;
+    height: 33px;
+    color: white;
+    background-color: black;
+}
+
+.buttonText{
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.paleButton{
+    margin-left: auto;
+    border: none;
+    color: black;
+    background-color: white;
+}
